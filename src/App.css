@@ -1,38 +1,113 @@
-.App {
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #1A120B;
+  color: #3C2A21;
+}
+
+.App{
+  display: flex;
+  justify-content: space-around;
+  margin: 5%;
+  background-color: #D5CEA3;
+  padding: 3% 0;
+}
+
+.container{
+  width: 40%;
+}
+
+h2{
+  margin: 0;
+  background-color: #E5E5CB;
+  padding: 3% 5%;
   text-align: center;
+  margin-bottom: 5%;
+  text-transform: uppercase;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.user-image{
+  border-radius: 100%;
+  width: 10%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.user-name{
+  width: 100%;
+  font-weight: 500;
+  margin-left: 3%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.user-list-item{
+  display: flex;
+  padding: 1% 3%;
+  background-color: #E5E5CB;
+  margin: 2% 0;
+  align-items: center;
+}
+
+.user-list-item:hover, .user-list-item:active, .user-list-item:focus{
+  background-color: #1A120B;
+  color: #E5E5CB;
+  cursor: pointer;
+}
+
+.user-card{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.bio-input-field{
+  width: 50%;
+  margin: 5% 0 3%;
+  resize: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+form{
+  width: 50%;
+}
+
+.input-field{
+  width: 90%;
+}
+
+.input-field, .bio-input-field{
+  display: block;
+  padding: 2%;
+  font-weight: 500;
+  background-color: #d3d3d3;
+}
+
+.profile-image{
+  width: 35%;
+  border-radius: 100%;
+}
+
+.input-label{
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 5%;
+}
+
+@media only screen and (max-width: 600px){
+  h2{
+    font-size: 0.8rem;
   }
-  to {
-    transform: rotate(360deg);
+  .user-name, .input-field, .username, .bio-input-field{
+    font-size: 0.7rem;
+  }
+  .input-label{
+    font-size: 0.5rem;
+  }
+  .bio-input-field{
+    width: 90%;
+  }
+  form{
+    width: 70%;
+  }
+  .user-list-item{
+    margin: 4% 0;
   }
 }
